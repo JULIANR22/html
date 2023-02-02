@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+caption{
+    border: 2px double black;
+    margin: 20px; 
+    padding: 10px;
+}
+
+th{
+    border: 2px double green;
+    margin: 20px; 
+    padding: 10px;
+}
+td{
+    border: 2px double black;
+    margin: 20px; 
+    padding: 10px;
+}
+tr{
+    border: 2px double gray;
+    margin: 20px; 
+    padding: 10px;
+}
+div{
+    width: 100%;
+    height: 120px;
+}
+
+.images{
+    border: 1px solid brown;
+    image-rendering: pixelated;
+    width: 300%;
+    height: 600px;
+    object-fit: scale-down;
+    object-position: top;
+}
+
+#images{
+    border: 2px solid gray;
+    width: 80%;
+    height: 40%;
+}

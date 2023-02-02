@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="" id="form" method="">
+        <label for="name"> Nombres:</label>
+        <input type="text" 
+        id="name"
+        name="name"
+        value="hola"
+        placeholder="introduzca tu nombre"
+        maxlength="25"
+        minlength="3"
+        pattern="[a-zA-Z ]"
+        required
+        title="error en datos"
+        autofocus="true"
+        autocomplete="off"
+        spellcheck="true"
+        tabindex="1"><br><br>
+        <label for="edad">edad:</label>
+        <input type="number" id="edad" placeholder="introduzca su edad" min="18" max="65"><br><br>
+        <label for="mail">correo:</label>
+        <input type="email" id="mail" placeholder="introduzca su correo"><br><br>
+        <label for="fecha">fecha:</label>
+        <input type="password"name="fecha" id="fecha" placeholder="introduzca fecha"><br><br>
+        <label for="color">color:</label>
+        <input type="color"><br><br>
+        
+        <datalist id="datalist">
+        <option value="febrero"></option>
+        <option value="enero"></option>
+        </datalist>
+        
+        <hr>
+        
+        <fieldset>
+        
+        <legend>estado civil</legend>
+        
+        <input type="radio" name="estado" value="casado" >casado
+        <input type="radio" name="estado" value="casado" >soltero
+        <input type="radio" name="estado" value="casado" >viudo
+    </fieldset><br><br>
+    <label for="lenguajes">lenguajes de programacion:</label>
+    
+    <select name="languajes" id="languajes">
+    <optgroup label="Backend">
+    <option value="java">java</option>      
+    <option value="python">python</option>
+    <option value="Ruby">Ruby</option>
+    </optgroup>
+    <optgroup label="Fronted">
+    <option value="javascript">javascript</option>      
+    <option value="Tyscript">Tyscript</option>
+    <option value="Css">Css</option>
+    </optgroup>
+    </select>
+<label for="termino">¿Acepta terminos y condiciones?</label>
+<input type="checkbox" name="termino" id="termino" >
+<input type="button" value="Enviar"><br><br>
+<button id="Enviar" type="submit">Enviar datos</button> 
+</form>
+    <script src="./main.js"></script>
+</body>
+</html>
